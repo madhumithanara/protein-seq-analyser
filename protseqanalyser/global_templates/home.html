@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block one %}
-
+       
 
         <div class="card-deck">
             <a href="{% url 'multiprotseqalign:predict' %}" class="card">
@@ -45,6 +45,11 @@
                 </div>
             </a>  
          </div>
+
+        {% comment %} To be added in the CSS {% endcomment %}
+         <footer style = "position: fixed;left: 0;bottom: 0;width: 100%;color: white;text-align: center;">
+         <h3> You are visiter number {{ visitors }} </h3>
+         </footer>
 
 
 {% endblock %}
